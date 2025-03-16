@@ -1,0 +1,4 @@
+env: node
+buildCommand: npm install
+startCommand: npm start
+nodeVersion: 18.x # Możesz dostosować wersję, jeśli używasz innej wersji Node.js
