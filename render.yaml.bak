@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dom-seniora-frontend
+    env: node
+    plan: free
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm start
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://dom-seniora-backend.onrender.com

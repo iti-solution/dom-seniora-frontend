@@ -1,4 +1,6 @@
-env: node
-buildCommand: npm install
-startCommand: npm start
-nodeVersion: 18.x # Możesz dostosować wersję, jeśli używasz innej wersji Node.js
+# .render.yaml
+
+env: node                # Używamy środowiska Node.js
+nodeVersion: "18.x"      # Wybieramy wersję Node.js, np. 18.x
+buildCommand: "npm install && npm run build"  # Komenda do instalacji zależności i budowania projektu
+startCommand: "npm start"  # Komenda do uruchomienia aplikacji po zbudowaniu
